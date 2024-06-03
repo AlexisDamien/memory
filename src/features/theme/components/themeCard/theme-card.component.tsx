@@ -1,5 +1,5 @@
 import {Box, Typography} from "@mui/material";
-import React from "react";
+import ToolBar from "../toolBar/tool-bar-component";
 type Props={
     name: string;
     description: string;
@@ -8,9 +8,10 @@ type Props={
 const ThemeCard = (props: Props): JSX.Element => {
     return (
        <Box display={"flex"} justifyContent={"space-evenly"} borderBottom={"solid 1px #1976d2"}>
-               <Typography >Nom</Typography>
-               <Typography >Description</Typography>
-               <Typography >Nb de cartes</Typography>
+               <Typography >{props.name}</Typography>
+               <Typography >{props.description}</Typography>
+               <Typography >{props.nbCards} Cartes</Typography>
+        <ToolBar/>
        </Box>
     );
 };
