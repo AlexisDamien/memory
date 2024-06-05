@@ -12,6 +12,10 @@ export const routes: Array<RouteObject> = [
                 element: <div>Home</div>,
             },
             {
+                path: "/categorie",
+                element: <div>Catégorie</div>,
+            },
+            {
                 path: "/theme",
                 element: <ThemePage/>,
             },

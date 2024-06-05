@@ -1,12 +1,12 @@
-import {AppBar, Grid, ListItemIcon, ThemeProvider} from "@mui/material";
+import { Grid, ListItemIcon} from "@mui/material";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import PendingOutlinedIcon from '@mui/icons-material/PendingOutlined';
 import {toolBarStyles} from "./tool-bar.styles";
 const ToolBar = (): JSX.Element => {
     return (
-        <Grid container className={toolBarStyles}>
-            <ListItemIcon>
+        <Grid  className={toolBarStyles}>
+            <ListItemIcon >
                 <AddCircleOutlineIcon/>
             </ListItemIcon>
             <ListItemIcon>
