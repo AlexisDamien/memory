@@ -1,6 +1,7 @@
 import { RouteObject } from "react-router-dom";
 import Layout from "../../common/components/Layout";
 import ThemePage from "../../features/theme/pages/ThemePage/theme-page.component";
+import {CategoriePage} from "../../features/categorie/pages/CategoriePage";
 
 export const routes: Array<RouteObject> = [
     {
@@ -13,7 +14,7 @@ export const routes: Array<RouteObject> = [
             },
             {
                 path: "/categorie",
-                element: <div>Catégorie</div>,
+                element: <CategoriePage/>,
             },
             {
                 path: "/theme",
