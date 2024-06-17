@@ -25,7 +25,7 @@ export const routes: Array<RouteObject> = [
             },
             {
                 path: "/settings",
-                element: <div>Paramètre</div>,
+                element: <div>Paramètres</div>,
             }
         ],
     },
