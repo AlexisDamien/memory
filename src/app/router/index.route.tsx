@@ -2,6 +2,7 @@ import { RouteObject } from "react-router-dom";
 import Layout from "../../common/components/Layout";
 import ThemePage from "../../features/theme/pages/ThemePage/theme-page.component";
 import { CategoriePage } from "../../features/categorie/pages/CategoriePage";
+import { HomePage } from "../../features/card/pages/Home";
 
 export const routes: Array<RouteObject> = [
     {
@@ -10,7 +11,7 @@ export const routes: Array<RouteObject> = [
         children: [
             {
                 path: "/",
-                element: <div>Home</div>,
+                element: <HomePage/>,
             },
             {
                 path: "/categorie",
