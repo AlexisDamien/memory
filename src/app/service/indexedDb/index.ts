@@ -17,7 +17,7 @@ const dbPromise = openDB<MyDB>('my-database', 1, {
   },
 });
 
-export const createItem = async (item: NewItem): Promise<void> => {
+export const createItem = async (item: NewItem, ): Promise<void> => {
   const db = await dbPromise;
   const tx = db.transaction('items', 'readwrite');
   tx.store.add(item as any); 

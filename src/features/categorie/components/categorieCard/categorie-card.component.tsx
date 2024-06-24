@@ -5,7 +5,7 @@ type Props={
     description: string;
     nbCards: number;
 }
-const ThemeCard = (props: Props): JSX.Element => {
+const CategorieCard = (props: Props): JSX.Element => {
     return (
        <Box display="flex" justifyContent={"space-evenly"} borderBottom={"solid 1px #1976d2"} padding={"10px"}>
                <Typography >{props.name}</Typography>
@@ -16,4 +16,4 @@ const ThemeCard = (props: Props): JSX.Element => {
     );
 };
 
-export default ThemeCard;
+export default CategorieCard;
