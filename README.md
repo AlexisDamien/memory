@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+Projet React avec IndexedDB
+Ce projet est une application React qui utilise IndexedDB pour la gestion de données locales. L'application permet de gérer des catégories, des thèmes et des cartes associées à ces thèmes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fonctionnalités
+Gestion des catégories : Ajouter, supprimer et afficher des catégories.
+Gestion des thèmes : Ajouter, supprimer et afficher des thèmes dans une catégorie donnée.
+Gestion des cartes : Ajouter, supprimer, mettre à jour et afficher des cartes dans un thème donné.
+Révision espacée : Possibilité de réviser un nombre spécifié de cartes pour un thème sélectionné.
+Prérequis
+Avant de démarrer, assurez-vous d'avoir Node.js installé sur votre machine.
 
-Currently, two official plugins are available:
+Installation
+Clonez le repository :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Copier le code
+git clone https://github.com/votre-utilisateur/projet-react-indexeddb.git
+Installez les dépendances :
 
-## Expanding the ESLint configuration
+Copier le code
+cd projet-react-indexeddb
+npm install
+Configuration
+Aucune configuration spécifique n'est nécessaire pour le fonctionnement de base. Assurez-vous que votre navigateur prend en charge IndexedDB pour une exécution correcte de l'application.
+Les données tests sont directment intégrés à l'app.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Utilisation
+Démarrez l'application en mode développement :
 
-- Configure the top-level `parserOptions` property like this:
+Copier le code
+npm start
+Ouvrez votre navigateur et accédez à http://localhost: [port] pour voir l'application en action.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Vous pouvez utiliser l'interface utilisateur pour créer, gérer et réviser des catégories, des thèmes et des cartes.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Structure du projet
+public/ : Contient le fichier HTML principal et les ressources statiques.
+src/ : Contient le code source de l'application React.
+components/ : Composants réutilisables de l'interface utilisateur.
+service/ : Fonctions pour interagir avec IndexedDB (CRUD pour catégories, thèmes, cartes).
+pages/ : Composants de pages spécifiques de l'application (par exemple, Page d'accueil, Page de catégories, Page de thèmes).
+App.tsx : Composant principal de l'application.
+
+Technologies utilisées
+React : Bibliothèque JavaScript pour la création d'interfaces utilisateur.
+IndexedDB : API de base de données de navigateur pour le stockage de données côté client.
+Material-UI : Bibliothèque de composants React pour une conception rapide et facile.
+Node.js : Environnement d'exécution JavaScript côté serveur.
+npm : Gestionnaire de paquets Node.js pour l'installation des dépendances.
