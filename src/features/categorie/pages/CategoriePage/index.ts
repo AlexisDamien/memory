@@ -1,1 +1,1 @@
-export { default as CategoriePage } from "./categorie-page.component.tsx";
+export { default as CategoriePage } from "./categorie-page.component";

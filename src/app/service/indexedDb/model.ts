@@ -1,4 +1,3 @@
-// types.ts
 export interface NewItem {
     name: string,
     description: string,
