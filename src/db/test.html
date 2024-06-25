@@ -12,7 +12,7 @@
         import { deleteObject } from './deleteEntry.js';
 
         let db;
-        //test test test
+
         document.addEventListener('DOMContentLoaded', () => {
             openDatabase('memory', 1, [
                 { name: 'categories', options: { keyPath: 'id', autoIncrement: true }, indices: [{ name: 'name', keyPath: 'name' }] },
