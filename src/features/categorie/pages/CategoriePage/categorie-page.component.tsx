@@ -38,7 +38,7 @@ const CategoriePage: React.FC = () => {
 
   return (
     <Grid container spacing={3} display={"flex"} flexDirection={"column"}>
-      <h1>Page de Catégorie</h1>
+      <h1 className={"mt-24 mb-8 md:mt-32 text-xl text-center"}>Page de Catégorie</h1>
       <Box display="flex" flexDirection="column" gap={2}>
         <TextField
           label="Nom de la catégorie"

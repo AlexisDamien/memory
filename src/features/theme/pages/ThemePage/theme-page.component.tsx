@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, Box, TextField, Button, Typography, MenuItem, Select } from '@mui/material';
-import { createTheme, getAllThemes, deleteTheme, createCard, getCardsByTheme, updateCard, deleteCard, getAllCategories, createCategory } from './../../../../app/service/indexedDb';
+import { createTheme, getAllThemes, deleteTheme, createCard, getCardsByTheme, updateCard, deleteCard, getAllCategories } from './../../../../app/service/indexedDb';
 import { Theme, Card, Category } from './../../../../app/service/indexedDb/model';
 
 const ThemePage: React.FC = () => {
@@ -77,7 +77,7 @@ const ThemePage: React.FC = () => {
 
   return (
     <Grid container spacing={3} display={"flex"} flexDirection={"column"}>
-      <h1>Theme Page</h1>
+      <h1 className={"mt-24 mb-8 md:mt-32 text-xl text-center"}>Theme Page</h1>
       <Box display="flex" flexDirection="column" gap={2}>
         <Select
           value={selectedCategory}

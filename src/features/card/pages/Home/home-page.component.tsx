@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Grid, Box, TextField, Button, Typography, MenuItem, Select } from '@mui/material';
+import { Grid, Box, TextField, Button, MenuItem, Select } from '@mui/material';
 import { getAllThemes } from './../../../../app/service/indexedDb';
 import { Theme } from './../../../../app/service/indexedDb/model';
 import RevisionComponent from './../../components/revisionComponent/revision-component.component';
@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
 
   return (
     <Grid container spacing={3} display={"flex"} flexDirection={"column"} alignItems={"center"}>
-      <h1>Home Page</h1>
+      <h1 className={"mt-24 mb-8 md:mt-32 text-xl text-center"}>Home Page</h1>
       {!startRevision ? (
         <Box display="flex" flexDirection="column" gap={2}>
           <Select
