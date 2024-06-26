@@ -27,7 +27,7 @@ Utilisation
 Démarrez l'application en mode développement :
 
 Copier le code
-npm start
+npm run dev
 Ouvrez votre navigateur et accédez à http://localhost: [port] pour voir l'application en action.
 
 Vous pouvez utiliser l'interface utilisateur pour créer, gérer et réviser des catégories, des thèmes et des cartes.
@@ -46,3 +46,4 @@ IndexedDB : API de base de données de navigateur pour le stockage de données c
 Material-UI : Bibliothèque de composants React pour une conception rapide et facile.
 Node.js : Environnement d'exécution JavaScript côté serveur.
 npm : Gestionnaire de paquets Node.js pour l'installation des dépendances.
+cdn tailwind : framework css

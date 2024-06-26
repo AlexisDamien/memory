@@ -24,10 +24,6 @@ export const routes: Array<RouteObject> = [
             {
                 path: "/reminders",
                 element: <div>Rappel</div>,
-            },
-            {
-                path: "/settings",
-                element: <div>Paramètres</div>,
             }
         ],
     },
